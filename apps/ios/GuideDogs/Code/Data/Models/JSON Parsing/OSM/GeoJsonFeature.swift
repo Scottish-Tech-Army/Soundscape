@@ -203,13 +203,13 @@ class GeoJsonFeature {
         
         // Case: ATMs
         if value == "atm" {
-            superCategory = SuperCategory.mobility
+            superCategory = SuperCategory.financial
             return
         }
         
         // Case: Banks
         if value == "bank" {
-            superCategory = SuperCategory.places
+            superCategory = SuperCategory.financial
             return
         }
         

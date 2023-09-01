@@ -26,6 +26,9 @@ enum SuperCategory: String {
     case safety = "safety"
     case beacons = "beacons"
     case authoredActivity = "authoredActivity"
+
+    // Additional custom filters
+    case financial = "financial"
     
     // MARK: Static Methods
     

@@ -19,7 +19,8 @@ struct NearbyTableFilter: Equatable {
     static var defaultFilters: [NearbyTableFilter] {
         return [
             .defaultFilter,
-            NearbyTableFilter(type: .transit)
+            NearbyTableFilter(type: .transit),
+            NearbyTableFilter(type: .finance)
         ]
     }
     
@@ -54,6 +55,9 @@ struct NearbyTableFilter: Equatable {
             case .transit:
                 self.localizedString = GDLocalizedString("filter.transit")
                 self.image = UIImage(named: "Transit")
+            case .finance:
+                self.localizedString = GDLocalizedString("filter.finance")
+                self.image = UIImage(systemName: "dollarsign.square.fill")
             }
         } else {
             // There is no `PrimaryType` filter selected

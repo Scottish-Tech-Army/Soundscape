@@ -11,6 +11,7 @@ import Foundation
 enum PrimaryType: String, CaseIterable, Type {
     
     case transit
+    case finance
     
     func matches(poi: POI) -> Bool {
         guard let typeable = poi as? Typeable else {
