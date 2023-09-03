@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
 protocol SearchResultsUpdaterDelegate: AnyObject {
     func searchResultsDidStartUpdating()
@@ -77,6 +78,15 @@ class SearchResultsUpdater: NSObject {
             completion(.entity(poi), nil)
         }
     }
+
+    func getMKLocalSearch(searchText: String) -> MKLocalSearch {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        let coordinate = self.location!.coordinate
+        request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
+        let search = MKLocalSearch(request: request)
+        return search
+    }
     
 }
 
@@ -117,9 +127,11 @@ extension SearchResultsUpdater: UISearchResultsUpdating {
         
         searchRequestToken?.cancel()
         
-        //
+
         // Fetch autosuggest results with new search text
-        //
+
+        let search = getMKLocalSearch(searchText: searchText)
+        search.start(completionHandler: searchWithTextCallback)
     }
     
 }
@@ -158,7 +170,45 @@ extension SearchResultsUpdater: UISearchBarDelegate {
         
         //
         // Fetch search results given search text
-        //
+        let search = getMKLocalSearch(searchText: searchText)
+        search.start(completionHandler: searchWithTextCallback)
+
     }
+
+    private func searchWithTextCallback(using response: MKLocalSearch.Response?, error: Error?) -> Void {
+        guard error == nil else {
+            return
+        }
+        var pois: [POI] = []
+        if let mapItems = response?.mapItems {
+            for result in mapItems {
+                let lat = result.placemark.location?.coordinate.latitude
+                let long = result.placemark.location?.coordinate.longitude
+                var addressParts: [String] = []
+                if let substreet = result.placemark.subThoroughfare {
+                    addressParts.append(substreet)
+                }
+                if let street = result.placemark.thoroughfare {
+                    addressParts.append(street + ",")
+                }
+                if let city = result.placemark.locality {
+                    addressParts.append(city)
+                }
+                if let state = result.placemark.administrativeArea {
+                    addressParts.append(state + ",")
+                }
+                if let postalCode = result.placemark.postalCode {
+                    addressParts.append(postalCode + ",")
+                }
+                if let country = result.placemark.country {
+                    addressParts.append(country)
+                }
+                let address = addressParts.joined(separator: " ")
+                pois.append(GenericLocation(lat: lat!, lon: long!, name: result.name!, address: address))
+            }
+        }
+        delegate?.searchResultsDidUpdate(pois, searchLocation: self.location)
+    }
+
     
 }

@@ -11,6 +11,9 @@
 /* Title for button to dismiss alert */
 "general.alert.dismiss" = "Dismiss";
 
+/* Title for button to open settings from alert */
+"general.alert.settings" = "Settings";
+
 /* Title for a button that allows a user to skip a step */
 "general.alert.skip" = "Skip";
 
@@ -94,6 +97,16 @@
 
 /* Alert action to discard changes */
 "general.alert.discard" = "Discard";
+
+/* Alert action to give options when location access is denied */
+"location.denied.options.title" = "Enable Location Services";
+
+/* Alert action messages to give options when location access is denied */
+"location.denied.options.message" = "It appears that your privacy settings are preventing the use of location services.
+
+To enable full app functionality, please adjust your device settings.
+
+Alternatively, you may continue previewing the app with a predefined test location.";
 
 /* Clear text from a text field */
 "general.text.clear_text" = "Clear text";
@@ -294,6 +307,22 @@
 /* Notification to authorize motion and fitness activity on the device. Keep newlines (\n) between sentences. Ensure that "Motion & Fitness" is translated the same as `device_motion.title`. {NumberedPlaceholder="\n"} */
 "device_motion.authorize.instructions" = "1. Open the Settings app below\n2. Turn on Motion & Fitness Tracking";
 
+// ------------------------------------------------------------------------------
+// MARK: - Supported email clients
+// ------------------------------------------------------------------------------
+
+/* String indicating the system-default mail client on iOS */
+"mail.default" = "Default";
+
+/* Translated string for Gmail */
+"mail.gmail" = "Gmail";
+
+/* Translated name string for Outlook */
+"mail.msoutlook" = "Microsoft Outlook";
+
+/* Translated string for Yahoo Mail */
+"mail.yahoo" = "Yahoo Mail";
+
 //------------------------------------------------------------------------------
 // MARK: - Settings
 //------------------------------------------------------------------------------
@@ -338,7 +367,7 @@
 "settings.feedback.subject" = "Soundscape Feedback";
 
 /* Prompt that is asking the user to select an email application from the list of email apps they have installed on their phone. */
-"settings.feedback.choose_email_app" = "Choose a mail app:";
+"settings.feedback.choose_email_app" = "Choose an email app:";
 
 /* Warning that informs the user that they do not have any mail apps installed. This is displayed when the user taps the button to provide us with feedback. */
 "settings.feedback.no_mail_client_error" = "No mail app installed";

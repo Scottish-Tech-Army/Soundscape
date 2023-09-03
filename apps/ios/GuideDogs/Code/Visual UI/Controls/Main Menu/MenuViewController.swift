@@ -66,11 +66,9 @@ class MenuViewController: UIViewController {
     
     override func loadView() {
         // Build views for menu items
-        menuView.addMenuItem(.recreation)
         menuView.addMenuItem(.devices)
         menuView.addMenuItem(.settings)
         menuView.addMenuItem(.help)
-        menuView.addMenuItem(.learningResources)
         menuView.addMenuItem(.feedback)
         menuView.addMenuItem(.rate)
         menuView.addMenuItem(.share)
@@ -122,7 +120,7 @@ class MenuViewController: UIViewController {
             select(.help)
             
         case .feedback:
-            let alertController = UIAlertController(email: GDLocalizationUnnecessary("yourproduct@yourdomain.com"),
+            let alertController = UIAlertController(email: MailClient.supportEmail,
                                                     subject: GDLocalizedString("settings.feedback.subject"),
                                                     preferredStyle: .actionSheet) { [weak self] (mailClient) in
                 if let mailClient = mailClient {

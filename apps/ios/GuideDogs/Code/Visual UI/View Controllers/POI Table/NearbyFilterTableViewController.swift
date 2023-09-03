@@ -20,13 +20,13 @@ class NearbyFilterTableViewController: UITableViewController, POITableViewContro
     // MARK: Properties
     
     weak var delegate: POITableViewDelegate?
-    private var context = NearbyDataContext()
+    private var context: NearbyDataContext = .fetchLocationContext()
     private var data: NearbyData?
     private var subscriber: AnyCancellable?
     var onDismissPreviewHandler: (() -> Void)?
     
     // MARK: View Life Cycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

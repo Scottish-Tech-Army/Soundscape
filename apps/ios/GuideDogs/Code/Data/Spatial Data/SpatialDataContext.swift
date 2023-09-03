@@ -182,7 +182,9 @@ class SpatialDataContext: NSObject, SpatialDataProtocol {
     
     @objc private func onAppDidInitialize() {
         // Run the initial spatial data update
-        
+
+        cacheTestLocationIfRequired()
+
         guard let location = AppContext.shared.geolocationManager.location else {
             GDLogSpatialDataWarn("SpatialDataContext initialized, but no location data is available yet...")
             return
@@ -212,6 +214,16 @@ class SpatialDataContext: NSObject, SpatialDataProtocol {
         }
         
         updateSpatialDataAsync(location: location)
+    }
+
+    func cacheTestLocationIfRequired() {
+        let tile = VectorTile.tileForLocation(.sample, zoom: SpatialDataContext.zoomLevel)
+
+        guard !SpatialDataContext.isCached(tile: tile) else {
+            return
+        }
+
+        AppContext.shared.spatialDataContext.updateSpatialDataAsync(location: .sample)
     }
     
     func start() {
@@ -875,5 +887,10 @@ extension SpatialDataContext {
             rootViewController.present(alertController, animated: true, completion: nil)
         }
     }
-    
+}
+
+extension SpatialDataContext {
+    public func fetchSamplePOIs() -> SpatialDataViewProtocol? {
+        return getDataView(for: .sample)
+    }
 }

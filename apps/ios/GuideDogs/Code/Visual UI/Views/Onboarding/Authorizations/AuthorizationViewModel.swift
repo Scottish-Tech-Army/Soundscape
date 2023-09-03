@@ -54,6 +54,7 @@ extension AuthorizationViewModel: AsyncAuthorizationProviderDelegate {
     
     func authorizationDidChange(_ authorization: AuthorizationStatus) {
         authorizationStatus = authorization
+        print(authorizationStatus)
         
         GDATelemetry.track("onboarding.authorization.status_changed", with: ["service": service.rawValue, "status": authorizationStatus.rawValue])
     }

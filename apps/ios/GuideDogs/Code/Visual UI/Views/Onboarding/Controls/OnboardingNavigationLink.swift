@@ -31,7 +31,6 @@ struct OnboardingNavigationLink<Destination: View>: View {
         }
         .padding(.horizontal, 24.0)
     }
-    
 }
 
 struct OnboardingNavigationLink_Previews: PreviewProvider {

@@ -39,7 +39,7 @@ class FirstLaunchTermsStepViewController: FirstLaunchStepViewController {
         
         // Add link
         attributedString.addAttribute(NSAttributedString.Key.link,
-                                      value: AppContext.Links.servicesAgreementURL(for: LocalizationContext.currentAppLocale),
+                                      value: AppContext.Links.servicesAgreementURL,
                                       range: range)
         
         // Underline

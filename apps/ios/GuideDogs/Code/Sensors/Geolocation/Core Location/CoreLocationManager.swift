@@ -78,7 +78,11 @@ class CoreLocationManager: NSObject {
     }
     
     // Authorization
-    
+
+    var isAuthorized : Bool {
+        authorizationStatus == .authorized
+    }
+
     /// Wraps `clAuthorizationStatus` in a value expected by `AuthorizationProvider` APIs and associated
     /// UI
     var authorizationStatus: AuthorizationStatus {

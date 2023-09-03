@@ -347,7 +347,9 @@ class HomeViewController: UIViewController {
             self.performSegue(withIdentifier: "RequestLocationServices", sender: nil)
             return false
         case .reducedAccuracyLocationAuthorized, .denied:
-            self.performSegue(withIdentifier: "AuthorizeLocationServices", sender: nil)
+           // self.performSegue(withIdentifier: "AuthorizeLocationServices", sender: nil) // change here
+            let alertController = UIAlertController.locationServicesDeniedOptions()
+            self.present(alertController, animated: true, completion: nil)
             return false
         default:
             // Authorized
@@ -723,7 +725,13 @@ extension HomeViewController: SmallBannerContainerView {
     func setSmallBannerHeight(_ height: CGFloat) {
         smallBannerContainerHeightConstraint.constant = height
     }
-    
+
+   static func openDeviceSetting() {
+        if let appSettings = URL(string: UIApplication.openSettingsURLString) {
+            GDATelemetry.track("open_settings", with: ["context": "authorize_location_services"])
+            UIApplication.shared.open(appSettings, options: [:], completionHandler: nil)
+        }
+    }
 }
 
 private extension UIAlertController {
@@ -748,5 +756,23 @@ private extension UIAlertController {
         alert.addAction(UIAlertAction(title: GDLocalizedString("general.alert.dismiss"), style: .default))
         return alert
     }
-    
+
+    static func locationServicesDeniedOptions() -> UIAlertController {
+        let alertController = UIAlertController(title: GDLocalizedString("location.denied.options.title"), message:
+                                                    GDLocalizedString("location.denied.options.message"), preferredStyle: .alert)
+
+        alertController.addAction(
+            UIAlertAction(
+                title: GDLocalizedString("general.alert.settings"),
+                style: .cancel) {_ in
+                    HomeViewController.openDeviceSetting()
+                })
+
+        alertController.addAction(
+            UIAlertAction(
+                title: GDLocalizedString("general.alert.continue"),
+                style: .default) {_ in
+                })
+        return alertController
+    }
 }

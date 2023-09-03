@@ -19,8 +19,7 @@ extension CLLocation: Samplable {
     static var samples: [CLLocation] { [sample] }
     
     static var sample: CLLocation {
-        // Near 9th Ave N and Harrison in SLU Seattle
-        CLLocation(latitude: 47.622491, longitude: -122.339840)
+        CLLocation(latitude: 55.955, longitude: -3.223)
     }
 }
 

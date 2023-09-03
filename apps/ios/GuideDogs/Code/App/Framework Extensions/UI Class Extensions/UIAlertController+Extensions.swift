@@ -9,29 +9,36 @@
 import Foundation
 
 enum MailClient: String, CaseIterable {
-    
-    // TODO: Add Mail Clients that you would like to support
+
+    // Feedback destination email address
+    public static let supportEmail = "support@scottishtecharmy.org"
+
+    // Supported Mail Clients
     // These applications must also be defined in 'Queried URL Schemes' in Info.plist
-    
-    // example: case .outlook
-    case example
+
+    case systemMail
+    case gmail
+    case outlook
+    case yahooMail
     
     var localizedTitle: String {
-        // TODO: Return a localized title string for each mail client
-        
         switch self {
-        case .example: return GDLocalizedString("")
+        case .systemMail: return GDLocalizedString("mail.default")
+        case .gmail: return GDLocalizedString("mail.gmail")
+        case .outlook: return GDLocalizedString("mail.msoutlook")
+        case .yahooMail: return GDLocalizedString("mail.yahoo")
         }
     }
     
     func url(email: String, subject: String) -> URL? {
         let deviceInfo = "iOS \(UIDevice.current.systemVersion), \(UIDevice.current.modelName), \(LocalizationContext.currentAppLocale.identifierHyphened), v\(AppContext.appVersion).\(AppContext.appBuild)"
         let escapedSubject = "\(subject) (\(deviceInfo))".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed) ?? GDLocalizedString("settings.feedback.subject")
-        
-        // TODO: Return appropriate URL for each mail client
-        
+
         switch self {
-        case .example: return URL(string: "URL TO OPEN EMAIL WITH SUBECT LINE")
+        case .systemMail: return URL(string: "mailto:\(email)?subject=\(escapedSubject)")
+        case .gmail: return URL(string: "googlegmail:///co?to=\(email)&subject=\(escapedSubject)")
+        case .outlook: return URL(string: "ms-outlook://compose?to=\(email)&subject=\(escapedSubject)")
+        case .yahooMail: return  URL(string: "ymail://mail/compose?to=\(email)&subject=\(escapedSubject)")
         }
     }
 }

@@ -446,3 +446,7 @@ extension LocationDetail {
     }
     
 }
+
+extension LocationDetail {
+    public static let testLocationDetail = LocationDetail.init(location: CLLocation.sample)
+}
