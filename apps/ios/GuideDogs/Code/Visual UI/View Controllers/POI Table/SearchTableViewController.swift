@@ -92,23 +92,8 @@ class SearchTableViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // If this is a release build, hide `Nearby Places Map`
-        if FeatureFlag.isEnabled(.developerTools) == false {
-            navigationItem.rightBarButtonItems = []
-        }
-        
-        // Initialize search controller
-        self.searchController = UISearchController(delegate: self)
-        
-        // Add search controller to navigation bar
-        self.navigationItem.searchController = self.searchController
-        self.navigationItem.hidesSearchBarWhenScrolling = false
-        
-        // Search results will be displayed modally
-        // Use this view controller to define presentation context
-        self.definesPresentationContext = true
-        
+
+        setActions()
         updateTableView()
     }
     
@@ -161,7 +146,25 @@ class SearchTableViewController: BaseTableViewController {
         preferredContentSize.height = UIView.preferredContentHeight(for: tableView)
     }
     
-    // `UITableView`
+   // MARK: - // `UITableView` Private functions
+
+    private func setActions() {
+        // If this is a release build, hide `Nearby Places Map`
+        if FeatureFlag.isEnabled(.developerTools) == false {
+            navigationItem.rightBarButtonItems = []
+        }
+
+        // Initialize search controller
+        self.searchController = UISearchController(delegate: self)
+
+        // Add search controller to navigation bar
+        self.navigationItem.searchController = self.searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+
+        // Search results will be displayed modally
+        // Use this view controller to define presentation context
+        self.definesPresentationContext = true
+    }
     
     private func updateTableView() {
         DispatchQueue.main.async { [weak self] in
