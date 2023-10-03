@@ -31,8 +31,8 @@ class CustomDisclosureTableViewCell: UITableViewCell {
         
         // Initialization code
         self.accessoryView = disclosureImage
-        
         self.selectionStyle = .default
+        backgroundColor = Colors.Background.primary
     }
     
     func showActivityIndicator() {

@@ -47,16 +47,10 @@ class CalloutButtonPanelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Configure header
-        headerLabel.text = GDLocalizedString("callouts.panel.title").uppercasedWithAppLocale()
-                
+
+        stylize()
         configureButtonLabels()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleLocateNotification), name: Notification.Name.didToggleLocate, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleOrientateNotification), name: Notification.Name.didToggleOrientate, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleLookAheadNotification), name: Notification.Name.didToggleLookAhead, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleMarkedPointsNotification), name: Notification.Name.didToggleMarkedPoints, object: nil)
+        setNotification()
     }
     
     override func viewDidLayoutSubviews() {
@@ -99,7 +93,20 @@ class CalloutButtonPanelViewController: UIViewController {
             element.accessibilityIdentifier = "btn.nearbymarkers"
         }
     }
-    
+// MARK: - Private functions
+
+    private func stylize() {
+        view.backgroundColor = Colors.Background.primary
+        headerLabel.text = GDLocalizedString("callouts.panel.title").uppercasedWithAppLocale()
+    }
+
+    private func setNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleLocateNotification), name: Notification.Name.didToggleLocate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleOrientateNotification), name: Notification.Name.didToggleOrientate, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleLookAheadNotification), name: Notification.Name.didToggleLookAhead, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handleDidToggleMarkedPointsNotification), name: Notification.Name.didToggleMarkedPoints, object: nil)
+    }
+
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         

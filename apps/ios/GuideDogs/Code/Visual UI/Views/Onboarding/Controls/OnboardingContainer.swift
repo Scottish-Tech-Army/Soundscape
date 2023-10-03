@@ -55,7 +55,7 @@ struct OnboardingContainer<Content: View>: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(.vertical, 48.0)
         }
-        .linearGradientBackground(.darkBlue, ignoresSafeArea: true)
+        .linearGradientBackground(.palePurple, ignoresSafeArea: true)
         .navigationBarHidden(true)
         .accessibilityIgnoresInvertColors(true)
     }

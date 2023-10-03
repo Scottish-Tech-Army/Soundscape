@@ -20,7 +20,7 @@ struct Colors {
     }
     
     struct Background {
-        static let primary: UIColor? = UIColor(named: "Background 1")
+        static let primary: UIColor? = UIColor(hex: "#604696")
         static let secondary: UIColor? = UIColor(named: "Background 2")
         static let tertiary: UIColor? = UIColor(named: "Background 3")
         static let quaternary: UIColor? = UIColor(named: "Background Base")
@@ -63,4 +63,30 @@ extension Color {
     static let purpleHighlight = Color(Colors.Highlight.purple!)
     static let yellowHighlight = Color(Colors.Highlight.yellow!)
     static let greenHighlight = Color(Colors.Highlight.green!)
+}
+
+
+// MARK: - Hex colors
+
+public extension UIColor {
+
+    convenience init(hex: UInt32) {
+        self.init(
+            red: CGFloat((hex & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((hex & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(hex & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
+
+    convenience init(hex: String) {
+        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
+
+        guard let intHex = UInt32(hexSanitized, radix: 16) else {
+            fatalError("Incorrect string hex")
+        }
+
+        self.init(hex: intHex)
+    }
 }
