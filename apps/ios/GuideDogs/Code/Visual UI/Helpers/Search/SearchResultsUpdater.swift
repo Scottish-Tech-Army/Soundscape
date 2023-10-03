@@ -79,15 +79,23 @@ class SearchResultsUpdater: NSObject {
         }
     }
 
+    func fetchCoordinate() -> CLLocationCoordinate2D {
+        guard AppContext.shared.geolocationManager.isAuthorized,
+              let coordinate = self.location?.coordinate
+        else {
+            return CLLocation.sample.coordinate
+        }
+        return coordinate
+    }
+
     func getMKLocalSearch(searchText: String) -> MKLocalSearch {
         let request = MKLocalSearch.Request()
         request.naturalLanguageQuery = searchText
-        let coordinate = self.location!.coordinate
+        let coordinate = fetchCoordinate()
         request.region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 75000, longitudinalMeters: 75000)
         let search = MKLocalSearch(request: request)
         return search
     }
-    
 }
 
 // MARK: - UISearchResultsUpdating
