@@ -60,7 +60,6 @@ class CardStateViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         // Configure the initial state
         if AppContext.shared.eventProcessor.activeBehavior is RouteGuidance {
             state = .route

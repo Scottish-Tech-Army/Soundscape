@@ -45,7 +45,7 @@ struct MarkerRouteTabButton: View {
             Spacer()
         }
         .padding()
-        .background(Color.secondaryBackground)
+        .background(Color.primaryBackground)
     }
     
     var body: some View {
@@ -130,7 +130,7 @@ struct MarkersAndRoutesList: View {
                                          value: .routes,
                                          selected: $selectedList)
                 }
-                .background(Color.secondaryBackground
+                .background(Color.primaryBackground
                                 .ignoresSafeArea(.all, edges: [.bottom])
                                 .shadow(color: .black, radius: 5.0, x: 0.0, y: -1.0))
                 
