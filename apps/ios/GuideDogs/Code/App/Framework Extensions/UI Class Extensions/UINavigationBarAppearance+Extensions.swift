@@ -18,6 +18,7 @@ extension UINavigationBarAppearance {
         case .darkBlue: configureWithOpaqueBackground()
         }
         
+
         // Background and foreground colors
         backgroundColor = navigationBarStyle.backgroundUIColor
         titleTextAttributes = [.foregroundColor: navigationBarStyle.foregroundUIColor]
