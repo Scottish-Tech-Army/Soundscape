@@ -26,11 +26,9 @@ class BeaconViewHostingController: UIHostingController<AnyView> {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         let height = UIView.preferredContentHeightCompressedHeight(for: view)
         preferredContentSize.height = height
         
         self.view.invalidateIntrinsicContentSize()
     }
-    
 }

@@ -6,7 +6,7 @@
 //  Licensed under the MIT License.
 //
 
-import Foundation
+import UIKit
 import SwiftUI
 
 extension Gradient {
@@ -31,5 +31,13 @@ extension Gradient {
             Color(.sRGB, red: 0.101, green: 0.406, blue: 0.608, opacity: 1)
         ])
     }
-    
+
+    static var palePurple: Gradient {
+        let uiColor1 = UIColor(hex: "#1c0549")
+        let uiColor2 = UIColor(hex: "#7e87cb")
+
+        let color1 = Color(uiColor1)
+        let color2 = Color(uiColor2)
+        return Gradient(colors: [color1, color2])
+    }
 }

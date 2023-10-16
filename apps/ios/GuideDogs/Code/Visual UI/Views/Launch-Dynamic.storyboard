@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CNG-9K-2vD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CNG-9K-2vD">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,7 +53,7 @@
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="0.14117647058823529" green="0.22745098039215686" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="StaticLaunchScreenBgColor"/>
                         <constraints>
                             <constraint firstItem="0jH-Vx-9jw" firstAttribute="top" secondItem="cuM-rX-RIk" secondAttribute="bottom" constant="35" id="E8A-Um-0oD"/>
                             <constraint firstItem="fhc-av-aVq" firstAttribute="centerX" secondItem="APb-ho-u6n" secondAttribute="centerX" id="EEM-zf-5rV"/>
@@ -71,5 +73,8 @@
     </scenes>
     <resources>
         <image name="launchScreenLogo" width="200" height="200"/>
+        <namedColor name="StaticLaunchScreenBgColor">
+            <color red="0.37647058823529411" green="0.27450980392156865" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

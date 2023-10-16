@@ -54,6 +54,7 @@
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>comgooglemaps</string>
 		<string>googlegmail</string>
 		<string>ms-outlook</string>
 		<string>ymail</string>

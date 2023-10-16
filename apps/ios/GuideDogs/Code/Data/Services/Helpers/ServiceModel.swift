@@ -34,7 +34,7 @@ class ServiceModel {
     static let errorRealm = "GDAHTTPErrorRealm"
     
     private static let productionServicesHostName =
-    "https://soundscape.scottishtecharmy.org/"
+    "https://prd2.soundscape.scottishtecharmy.org/"
     private static let productionAssestsHostName = "https://yourstaticblobstore"
     // Do not change `productionVoicesHostName`!
     private static let productionVoicesHostName = "https://yourstaticblobstore"

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 enum MailClient: String, CaseIterable {
 
@@ -43,6 +44,33 @@ enum MailClient: String, CaseIterable {
     }
 }
 
+enum MapsApp: String, CaseIterable {
+    case apple
+    case google
+    case waze
+
+    static let defaultMapZoom: Int = 10
+
+    var localizedTitle: String {
+        switch self {
+        case .apple: return "Apple Maps"
+        case .google: return "Google Maps"
+        case .waze: return "Waze"
+        }
+    }
+
+    func url(for location: CLLocation, name: String) -> URL? {
+        switch self {
+        case .apple:
+            return URL(string: "https://maps.apple.com/?q=\(location.coordinate.latitude.roundToDecimalPlaces(2)),\(location.coordinate.longitude.roundToDecimalPlaces(2))&ll=\(location.coordinate.latitude),\(location.coordinate.longitude)&z=\(MapsApp.defaultMapZoom)&t=s")
+        case .google:
+            return URL(string: "https://www.google.com/maps/search/?api=1&query=\(location.coordinate.latitude)%2C\(location.coordinate.longitude)")
+        case .waze:
+            return URL(string: "https://www.waze.com/ul?ll=\(location.coordinate.latitude)%2C\(location.coordinate.longitude)&zoom=\(MapsApp.defaultMapZoom)")
+        }
+    }
+}
+
 extension UIAlertController {
     /// Create and return a `UIAlertController` that is able to send an email with external email clients
     convenience init(email: String, subject: String, preferredStyle: UIAlertController.Style, handler: ((MailClient?) -> Void)? = nil) {
@@ -69,6 +97,36 @@ extension UIAlertController {
             })
         }
         
+        self.addAction(UIAlertAction(title: GDLocalizedString("general.alert.cancel"), style: .cancel, handler: nil))
+    }
+
+    /// Create and return a `UIAlertController` that is able to open a map location in an external maps app
+    convenience init(locationDetail: LocationDetail, preferredStyle: UIAlertController.Style, handler: ((MapsApp?) -> Void)? = nil) {
+
+        // Create alert actions for each support maps application
+        let actions = MapsApp.allCases.compactMap { (mapApp) -> UIAlertAction? in
+            guard let url = mapApp.url(for: locationDetail.location, name: locationDetail.displayName) else {
+                return nil
+            }
+            return UIAlertAction(title: mapApp.localizedTitle, url: url) {
+                handler?(mapApp)
+            }
+        }
+
+        if actions.isEmpty {
+            self.init(title: GDLocalizedString("general.error.error_occurred"),
+                      message: "No maps app installed",
+                      preferredStyle: .alert)
+        } else {
+            self.init(title: GDLocalizedString("general.alert.choose_an_app"),
+                      message: nil,
+                      preferredStyle: preferredStyle)
+
+            actions.forEach({ action in
+                self.addAction(action)
+            })
+        }
+
         self.addAction(UIAlertAction(title: GDLocalizedString("general.alert.cancel"), style: .cancel, handler: nil))
     }
 }

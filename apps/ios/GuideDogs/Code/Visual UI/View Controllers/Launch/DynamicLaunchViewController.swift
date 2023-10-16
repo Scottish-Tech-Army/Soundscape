@@ -12,6 +12,7 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 import Combine
+import SwiftUI
 
 class DynamicLaunchViewController: UIViewController {
 
@@ -24,7 +25,6 @@ class DynamicLaunchViewController: UIViewController {
     /// static initialization or are global.
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         LoggingContext.shared.start()
         
