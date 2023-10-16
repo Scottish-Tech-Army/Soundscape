@@ -25,7 +25,6 @@ class DynamicLaunchViewController: UIViewController {
     /// static initialization or are global.
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(Color.primaryBackground)
         // Do any additional setup after loading the view.
         LoggingContext.shared.start()
         
