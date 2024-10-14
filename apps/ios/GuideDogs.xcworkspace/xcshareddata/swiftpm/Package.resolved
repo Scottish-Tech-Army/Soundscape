@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "coregpx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vincentneo/CoreGPX.git",
+      "state" : {
+        "revision" : "42662cc9235d385bdd0356c8f4cb7b581da24e39",
+        "version" : "0.9.3"
+      }
+    },
+    {
       "identity" : "dznemptydataset",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dzenbot/DZNEmptyDataSet",
