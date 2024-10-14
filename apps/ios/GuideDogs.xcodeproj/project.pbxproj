@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -663,6 +663,7 @@
 		62F7A30C27B6080900C62390 /* InteractiveBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */; };
 		62F7A30E27B6082A00C62390 /* InteractiveBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */; };
 		87F82E5F35CA8BCEFAC47C4F /* Pods_Soundscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */; };
+		96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 96CF5F492CBDB14C00E9EDB4 /* CoreGPX */; };
 		B90C27D61EAF81D600007368 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C27D51EAF81D600007368 /* Sound.swift */; };
 		B918EE9825100FFF00A5354A /* CalloutRangeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */; };
 		B91D3F6427AB5546004159A8 /* UserAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3F6327AB5546004159A8 /* UserAction.swift */; };
@@ -1812,6 +1813,7 @@
 				2866A7C92625020600EBA2D8 /* AppCenterCrashes in Frameworks */,
 				286145F1262509DA000E5525 /* WindowsAzureMessaging in Frameworks */,
 				286F409D2624FF6000C3F80B /* NVActivityIndicatorView in Frameworks */,
+				96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */,
 				2866A7D5262502D500EBA2D8 /* CocoaLumberjackSwift in Frameworks */,
 				286145EB2625099F000E5525 /* SDWebImage in Frameworks */,
 				281BCBFF262638290031298D /* RealmSwift in Frameworks */,
@@ -5125,7 +5127,6 @@
 				D3D7CFC61B3D96460020B5E9 /* Resources */,
 				B9B06E971E6483900010936A /* CopyFiles */,
 				31500FEE224CA30000BD0A4E /* Localization Validation */,
-				A7C861097F0568D3663BCC29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5144,6 +5145,7 @@
 				286145F0262509DA000E5525 /* WindowsAzureMessaging */,
 				281BCBFE262638290031298D /* RealmSwift */,
 				283B0306264B03920092F74F /* SDWebImageSwiftUI */,
+				96CF5F492CBDB14C00E9EDB4 /* CoreGPX */,
 			);
 			productName = GuideDogs;
 			productReference = D3D7CFC81B3D96470020B5E9 /* Soundscape.app */;
@@ -5217,6 +5219,7 @@
 				286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */,
 				283B0305264B03920092F74F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */,
 			);
 			productRefGroup = D3D7CFC91B3D96470020B5E9 /* Products */;
 			projectDirPath = "";
@@ -5382,26 +5385,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Only run in debug type builds (\"Debug\", \"Debug-FF\", etc)\nif [[ ${CONFIGURATION} == \"Debug\"* ]]; then\n    ${SRCROOT}/Scripts/LocalizationLinter/main.swift\n    echo \"Skipping Localization Validation script (non-debug build)\"\nelse \n    echo \"Skipping Localization Validation script (non-debug build)\"\nfi\n";
-		};
-		A7C861097F0568D3663BCC29 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TBXML/TBXML.framework",
-				"${BUILT_PRODUCTS_DIR}/iOS-GPX-Framework/iOS_GPX_Framework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBXML.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOS_GPX_Framework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		E86D862CEECEE5E60D74C907 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -6689,6 +6672,14 @@
 				version = 10.11.0;
 			};
 		};
+		96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -6746,6 +6737,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
+		};
+		96CF5F492CBDB14C00E9EDB4 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

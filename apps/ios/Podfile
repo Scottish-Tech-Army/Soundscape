@@ -7,5 +7,5 @@ target 'Soundscape' do
     
     # When `pod install` is called, the 'cocoapods-patch' plugin
     # will patches the pod with the diff file in `/patches`.
-    pod "iOS-GPX-Framework", '0.0.2'
+    # pod "iOS-GPX-Framework", '0.0.2'
 end

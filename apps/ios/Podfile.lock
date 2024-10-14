@@ -1,20 +1,3 @@
-PODS:
-  - iOS-GPX-Framework (0.0.2):
-    - TBXML (~> 1.5)
-  - TBXML (1.5)
+PODFILE CHECKSUM: 72df5acaafec0473a2269e1cdd3d495359382737
 
-DEPENDENCIES:
-  - iOS-GPX-Framework (= 0.0.2)
-
-SPEC REPOS:
-  trunk:
-    - iOS-GPX-Framework
-    - TBXML
-
-SPEC CHECKSUMS:
-  iOS-GPX-Framework: f6d50c6664a1747746b73da6899b1fc9a1f81ff6
-  TBXML: 9f9dadb239f2f2af1dadb87fe43a0ce6e479379a
-
-PODFILE CHECKSUM: 3ada4d86754d535f326ac49c40608ac6e6a4d883
-
-COCOAPODS: 1.12.1
+COCOAPODS: 1.15.2
