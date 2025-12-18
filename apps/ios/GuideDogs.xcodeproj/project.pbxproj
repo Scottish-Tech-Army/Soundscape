@@ -38,7 +38,7 @@
 		281CB8812016B4650059B8C4 /* LocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8802016B4650059B8C4 /* LocationCallout.swift */; };
 		281CB8842017B4A70059B8C4 /* InsideLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8832017B4A70059B8C4 /* InsideLocationCallout.swift */; };
 		281CB8862017B9810059B8C4 /* AlongRoadLocationCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CB8852017B9810059B8C4 /* AlongRoadLocationCallout.swift */; };
-		281D59D11F4765160090F23A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		281D59D11F4765160090F23A /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		281D59D31F4765880090F23A /* FirstLaunchTermsStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281D59D21F4765880090F23A /* FirstLaunchTermsStepViewController.swift */; };
 		28211F22284E620F001A64A4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28211F21284E620F001A64A4 /* NetworkClient.swift */; };
 		2821F61B220A6D1600D15EFF /* AuthoredActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821F61A220A6D1600D15EFF /* AuthoredActivityLoader.swift */; };
@@ -115,10 +115,7 @@
 		285C8B812304868F00E466DF /* ARHeadsetGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C8B802304868E00E466DF /* ARHeadsetGenerator.swift */; };
 		285C8B83230496D900E466DF /* GlyphCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C8B82230496D900E466DF /* GlyphCallout.swift */; };
 		286145EB2625099F000E5525 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 286145EA2625099F000E5525 /* SDWebImage */; };
-		286145F1262509DA000E5525 /* WindowsAzureMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 286145F0262509DA000E5525 /* WindowsAzureMessaging */; };
 		2866A7C12625013400EBA2D8 /* DZNEmptyDataSet in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */; };
-		2866A7C72625020600EBA2D8 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C62625020600EBA2D8 /* AppCenterAnalytics */; };
-		2866A7C92625020600EBA2D8 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C82625020600EBA2D8 /* AppCenterCrashes */; };
 		2866A7CF2625028600EBA2D8 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7CE2625028600EBA2D8 /* Reachability */; };
 		2866A7D5262502D500EBA2D8 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */; };
 		286708D125005912002F962B /* street_non_1c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 286708D025005912002F962B /* street_non_1c.wav */; };
@@ -604,8 +601,8 @@
 		62A61232243F9542008A8174 /* MPEditAnnotationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A61231243F9542008A8174 /* MPEditAnnotationTableViewCell.swift */; };
 		62B11A3727ACAAC50094FE66 /* RoundedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A3627ACAAC50094FE66 /* RoundedBackground.swift */; };
 		62B11A5927B337650094FE66 /* OnboardingTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A5827B337650094FE66 /* OnboardingTextStyle.swift */; };
-		62B11A5C27B3398C0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		62B11A5E27B43CFA0094FE66 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		62B11A5C27B3398C0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
+		62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		62B11A6827B46C4B0094FE66 /* BeaconOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6727B46C4B0094FE66 /* BeaconOption.swift */; };
 		62B11A6A27B46F6E0094FE66 /* BeaconOption+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6927B46F6E0094FE66 /* BeaconOption+Style.swift */; };
 		62B11A6C27B46F820094FE66 /* BeaconOption+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B11A6B27B46F820094FE66 /* BeaconOption+Strings.swift */; };
@@ -662,7 +659,6 @@
 		62EACA2B26697F4300DBDECC /* WaypointDetailAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */; };
 		62F7A30C27B6080900C62390 /* InteractiveBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */; };
 		62F7A30E27B6082A00C62390 /* InteractiveBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */; };
-		87F82E5F35CA8BCEFAC47C4F /* Pods_Soundscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */; };
 		96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 96CF5F492CBDB14C00E9EDB4 /* CoreGPX */; };
 		B90C27D61EAF81D600007368 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C27D51EAF81D600007368 /* Sound.swift */; };
 		B918EE9825100FFF00A5354A /* CalloutRangeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */; };
@@ -836,7 +832,7 @@
 		C3B331242011615A00CD20F9 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331232011615A00CD20F9 /* Address.swift */; };
 		C3B3312A2012B8C600CD20F9 /* Address+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B331292012B8C600CD20F9 /* Address+Extensions.swift */; };
 		C3BB6C121EE08FC500C8D66D /* Launch-Dynamic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BB6C111EE08FC500C8D66D /* Launch-Dynamic.storyboard */; };
-		C3BC95D3231F053600B78903 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		C3BC95D3231F053600B78903 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		C3BC95D5231F054F00B78903 /* HeadingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95D4231F054F00B78903 /* HeadingType.swift */; };
 		C3BC95DB2321DA6A00B78903 /* HeadingValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DA2321DA6A00B78903 /* HeadingValue.swift */; };
 		C3BC95DD2322D6F600B78903 /* RawCourseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BC95DC2322D6F600B78903 /* RawCourseProvider.swift */; };
@@ -858,7 +854,7 @@
 		C3F4E4B422EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4E4B322EB5F92009C5E70 /* SignificantChangeMonitoringOrigin.swift */; };
 		C3F6A58C226F746C00C922F7 /* TableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58B226F746C00C922F7 /* TableViewDataSourcePrefetching.swift */; };
 		C3F6A590226F8DD300C922F7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6A58F226F8DD300C922F7 /* Token.swift */; };
-		C3F93CBF22D40A53009EF801 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		C3F93CBF22D40A53009EF801 /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		C3F93CFD22D7CA05009EF801 /* GeolocationManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F93CFC22D7CA05009EF801 /* GeolocationManagerProtocol.swift */; };
 		C3FA2EFB236A3A3700ADB8BC /* NotificationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFA236A3A3700ADB8BC /* NotificationContainer.swift */; };
 		C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FA2EFC236A3A6A00ADB8BC /* BannerContainer.swift */; };
@@ -890,6 +886,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0EAFEE942EF473F600E87513 /* azure-notificationhubs-ios-3.1.5 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "azure-notificationhubs-ios-3.1.5"; path = "../../../../../../Downloads/azure-notificationhubs-ios-3.1.5"; sourceTree = "<group>"; };
 		2800ABF02654427300B2622F /* AuthoredActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthoredActivityCell.swift; sourceTree = "<group>"; };
 		2800ABF326545F4C00B2622F /* AuthoredActivitiesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthoredActivitiesList.swift; path = "GuideDogs/Code/Visual UI/Views/Authored Activities/AuthoredActivitiesList.swift"; sourceTree = SOURCE_ROOT; };
 		2800ABF6265460C800B2622F /* RouteDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsView.swift; sourceTree = "<group>"; };
@@ -1240,7 +1237,6 @@
 		28FD0C46206AAC37000FC731 /* NewFeaturesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewFeaturesView.xib; path = "Code/Visual UI/Controls/New Feature Announcement/NewFeaturesView.xib"; sourceTree = "<group>"; };
 		2F4432FF1D36B5A300CA437D /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
 		2F4433011D36B5B300CA437D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = "Code/Visual UI/View Controllers/Settings/AboutViewController.swift"; sourceTree = "<group>"; };
-		305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.release.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.release.xcconfig"; sourceTree = "<group>"; };
 		31013A6420D9ACBE00205D1F /* HomeViewController+RemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HomeViewController+RemoteControl.swift"; path = "Code/Visual UI/View Controllers/Home/HomeViewController+RemoteControl.swift"; sourceTree = "<group>"; };
 		310254852278FA2200B1A770 /* WhatsNew.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = WhatsNew.xcassets; path = Assets/Images/WhatsNew.xcassets; sourceTree = "<group>"; };
 		311E92E31DF1E9CF003A5E23 /* BLELogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLELogger.swift; path = Code/App/Logging/BLELogger.swift; sourceTree = "<group>"; };
@@ -1288,7 +1284,6 @@
 		31F12C4122569E9100BDA072 /* StreetSuffixAbbreviations_fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StreetSuffixAbbreviations_fr.plist; path = Assets/PropertyLists/StreetSuffixAbbreviations_fr.plist; sourceTree = "<group>"; };
 		31F1370322B867B800FC1860 /* GeolocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeolocationManager.swift; path = "Code/Sensors/Geolocation/Geolocation Manager/GeolocationManager.swift"; sourceTree = "<group>"; };
 		31FE6C77233A7B760098D8C5 /* TelemetryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TelemetryHelper.swift; path = Code/App/Logging/TelemetryHelper.swift; sourceTree = "<group>"; };
-		40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.adhoc.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.adhoc.xcconfig"; sourceTree = "<group>"; };
 		568480881CB73F51004B4227 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		5684808F1CBC975E004B4227 /* Soundscape-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "Soundscape-Bridging-Header.h"; path = "Code/App/Soundscape-Bridging-Header.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		568480901CBC9C94004B4227 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = HomeViewController.swift; path = "Code/Visual UI/View Controllers/Home/HomeViewController.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -1565,8 +1560,6 @@
 		62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointDetailAnnotationView.swift; sourceTree = "<group>"; };
 		62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconView.swift; sourceTree = "<group>"; };
 		62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconViewModel.swift; sourceTree = "<group>"; };
-		8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.debug.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.debug.xcconfig"; sourceTree = "<group>"; };
-		AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundscape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C27D51EAF81D600007368 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Code/Audio/Protocols/Sound.swift; sourceTree = "<group>"; };
 		B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutRangeContext.swift; sourceTree = "<group>"; };
 		B91D3F6327AB5546004159A8 /* UserAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAction.swift; sourceTree = "<group>"; };
@@ -1808,10 +1801,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				283B0307264B03920092F74F /* SDWebImageSwiftUI in Frameworks */,
-				2866A7C72625020600EBA2D8 /* AppCenterAnalytics in Frameworks */,
 				2866A7CF2625028600EBA2D8 /* Reachability in Frameworks */,
-				2866A7C92625020600EBA2D8 /* AppCenterCrashes in Frameworks */,
-				286145F1262509DA000E5525 /* WindowsAzureMessaging in Frameworks */,
 				286F409D2624FF6000C3F80B /* NVActivityIndicatorView in Frameworks */,
 				96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */,
 				2866A7D5262502D500EBA2D8 /* CocoaLumberjackSwift in Frameworks */,
@@ -1819,7 +1809,6 @@
 				281BCBFF262638290031298D /* RealmSwift in Frameworks */,
 				28F1ECE2262505DC00E964C0 /* Realm in Frameworks */,
 				2866A7C12625013400EBA2D8 /* DZNEmptyDataSet in Frameworks */,
-				87F82E5F35CA8BCEFAC47C4F /* Pods_Soundscape.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2987,6 +2976,7 @@
 		4AD48659F673FA58D2DF2C07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0EAFEE942EF473F600E87513 /* azure-notificationhubs-ios-3.1.5 */,
 				280FF2FC26AF6BDF00DE9C5D /* SwiftUI.framework */,
 				2876EE142433FE5600B0A137 /* CoreServices.framework */,
 				D3E2A6361CAD5CA100A5192A /* Accelerate.framework */,
@@ -2999,7 +2989,6 @@
 				D334CB751B9F682400546BF1 /* MapKit.framework */,
 				D3CE458E1C1737AE00AC1A25 /* MobileCoreServices.framework */,
 				D384DE871B867AD400884DE5 /* ReplayKit.framework */,
-				AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4254,16 +4243,6 @@
 			path = "Interactive View";
 			sourceTree = "<group>";
 		};
-		94B9789D44F5F13621A0C9B1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */,
-				305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */,
-				40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B91D3F6227AB5546004159A8 /* User Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -5092,7 +5071,6 @@
 				B9E5F4CE2891DBAC0019DEED /* Packages */,
 				4AD48659F673FA58D2DF2C07 /* Frameworks */,
 				D3D7CFC91B3D96470020B5E9 /* Products */,
-				94B9789D44F5F13621A0C9B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5121,7 +5099,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Soundscape" */;
 			buildPhases = (
-				E86D862CEECEE5E60D74C907 /* [CP] Check Pods Manifest.lock */,
 				D3D7CFC41B3D96460020B5E9 /* Sources */,
 				D3D7CFC51B3D96460020B5E9 /* Frameworks */,
 				D3D7CFC61B3D96460020B5E9 /* Resources */,
@@ -5136,13 +5113,10 @@
 			packageProductDependencies = (
 				286F409C2624FF6000C3F80B /* NVActivityIndicatorView */,
 				2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */,
-				2866A7C62625020600EBA2D8 /* AppCenterAnalytics */,
-				2866A7C82625020600EBA2D8 /* AppCenterCrashes */,
 				2866A7CE2625028600EBA2D8 /* Reachability */,
 				2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */,
 				28F1ECE1262505DC00E964C0 /* Realm */,
 				286145EA2625099F000E5525 /* SDWebImage */,
-				286145F0262509DA000E5525 /* WindowsAzureMessaging */,
 				281BCBFE262638290031298D /* RealmSwift */,
 				283B0306264B03920092F74F /* SDWebImageSwiftUI */,
 				96CF5F492CBDB14C00E9EDB4 /* CoreGPX */,
@@ -5212,12 +5186,10 @@
 			packageReferences = (
 				286F409B2624FF6000C3F80B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */,
-				2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */,
-				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */,
+				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
 				2866A7D3262502D500EBA2D8 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */,
 				283B0305264B03920092F74F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */,
 			);
@@ -5385,28 +5357,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Only run in debug type builds (\"Debug\", \"Debug-FF\", etc)\nif [[ ${CONFIGURATION} == \"Debug\"* ]]; then\n    ${SRCROOT}/Scripts/LocalizationLinter/main.swift\n    echo \"Skipping Localization Validation script (non-debug build)\"\nelse \n    echo \"Skipping Localization Validation script (non-debug build)\"\nfi\n";
-		};
-		E86D862CEECEE5E60D74C907 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Soundscape-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -5613,7 +5563,7 @@
 				284C9AF623886D3E00CBA392 /* StaticAudioEngineAsset.swift in Sources */,
 				C3FA2EFD236A3A6A00ADB8BC /* BannerContainer.swift in Sources */,
 				C30DDADF2255796B00104085 /* NotificationProtocol.swift in Sources */,
-				281D59D11F4765160090F23A /* (null) in Sources */,
+				281D59D11F4765160090F23A /* BuildFile in Sources */,
 				C34333A6221C8FF500D9CECD /* StaticTableViewDataSource.swift in Sources */,
 				C30DBD2023A2C19400082B27 /* SearchResultsUpdater.swift in Sources */,
 				28DC34C626B8A8D500ADA3C3 /* Samplable.swift in Sources */,
@@ -5688,7 +5638,7 @@
 				B93629B21FCF1C3000BAF3A6 /* GeometryUtils.swift in Sources */,
 				28BCD0C028529FBA00FD2F7D /* GuidedTourWaypointAudioStore.swift in Sources */,
 				627004EC26055A5500FBF5E5 /* HeadphoneMotionReachabilityWrapper.swift in Sources */,
-				62B11A5E27B43CFA0094FE66 /* (null) in Sources */,
+				62B11A5E27B43CFA0094FE66 /* BuildFile in Sources */,
 				620118D124AABB87004B0380 /* LocationDetailLocalizedLabel.swift in Sources */,
 				629F53DB26C724B600796B23 /* TitleTextFieldItem.swift in Sources */,
 				284D48592658291A009001AB /* ViewNavigationHelper.swift in Sources */,
@@ -5744,7 +5694,7 @@
 				6281B51D27110C370092F162 /* WaypointAddListViewModel.swift in Sources */,
 				6249501627068B5F008D842B /* RouteParametersHandler.swift in Sources */,
 				C34333A0221773C600D9CECD /* POITableViewCellConfigurator.swift in Sources */,
-				62B11A5C27B3398C0094FE66 /* (null) in Sources */,
+				62B11A5C27B3398C0094FE66 /* BuildFile in Sources */,
 				C3F06A911FFC41FF00EDDB42 /* Geocoder.swift in Sources */,
 				621628912853EF9900B1FF5B /* DateComponentsFormatter+Extension.swift in Sources */,
 				C324BBED22A1E97B00C83439 /* SuperCategoryPredicate.swift in Sources */,
@@ -5760,7 +5710,7 @@
 				28EB441626B4A27600D5BBE4 /* MarkerCell.swift in Sources */,
 				D30355D31B61401D00E1DDED /* GDAJSONObject.m in Sources */,
 				C30DDAEC2256935F00104085 /* Typeable.swift in Sources */,
-				C3F93CBF22D40A53009EF801 /* (null) in Sources */,
+				C3F93CBF22D40A53009EF801 /* BuildFile in Sources */,
 				C34333AE221CDB2F00D9CECD /* FilterTableViewHeaderView.swift in Sources */,
 				6201428424BF986400F003D5 /* NearbyFilterTableViewController.swift in Sources */,
 				C31BEE252215EA1B00EE9284 /* TableViewDelegate.swift in Sources */,
@@ -6108,7 +6058,7 @@
 				624DF66827BC61DB000A634C /* OnboardingCalloutButton.swift in Sources */,
 				28BA4A7A2655A13F00E1D273 /* Star.swift in Sources */,
 				620118CC24AAB489004B0380 /* LocationActionAlert.swift in Sources */,
-				C3BC95D3231F053600B78903 /* (null) in Sources */,
+				C3BC95D3231F053600B78903 /* BuildFile in Sources */,
 				2872D14C26D83B36000BE465 /* HapticWandBeacon.swift in Sources */,
 				2872D14E26D89C14000BE465 /* HapticBeacon.swift in Sources */,
 				284C9AF923886DA600CBA392 /* AudioEngineAsset.swift in Sources */,
@@ -6264,7 +6214,6 @@
 		};
 		3163C7431DFDB27D00C9E605 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Soundscape AdHoc";
@@ -6292,8 +6241,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6455,7 +6402,6 @@
 		};
 		D3D7CFEF1B3D96470020B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Soundscape Debug";
@@ -6484,8 +6430,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6517,7 +6461,6 @@
 		};
 		D3D7CFF01B3D96470020B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_SPOKEN_NAME = Soundscape;
@@ -6544,8 +6487,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6616,14 +6557,6 @@
 				minimumVersion = 5.13.2;
 			};
 		};
-		286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Azure/azure-notificationhubs-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.5;
-			};
-		};
 		2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dzenbot/DZNEmptyDataSet";
@@ -6632,15 +6565,7 @@
 				revision = 9bffa69a83a9fa58a14b3cf43cb6dd8a63774179;
 			};
 		};
-		2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Microsoft/AppCenter-SDK-Apple";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.3;
-			};
-		};
-		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
@@ -6698,29 +6623,14 @@
 			package = 286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		286145F0262509DA000E5525 /* WindowsAzureMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */;
-			productName = WindowsAzureMessaging;
-		};
 		2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */;
 			productName = DZNEmptyDataSet;
 		};
-		2866A7C62625020600EBA2D8 /* AppCenterAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */;
-			productName = AppCenterAnalytics;
-		};
-		2866A7C82625020600EBA2D8 /* AppCenterCrashes */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */;
-			productName = AppCenterCrashes;
-		};
 		2866A7CE2625028600EBA2D8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */;
+			package = 2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
 			productName = Reachability;
 		};
 		2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */ = {
