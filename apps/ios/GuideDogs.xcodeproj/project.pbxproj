@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EAFEE9F2EF482FD00E87513 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0EAFEE992EF482FD00E87513 /* CHANGELOG.md */; };
+		0EAFEEA02EF482FD00E87513 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0EAFEE9B2EF482FD00E87513 /* README.md */; };
+		0EAFEEA12EF482FD00E87513 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0EAFEE9A2EF482FD00E87513 /* LICENSE */; };
+		0EAFEEA22EF4830C00E87513 /* WindowsAzureMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAFEE9C2EF482FD00E87513 /* WindowsAzureMessaging.xcframework */; };
+		0EAFEEA32EF4830C00E87513 /* WindowsAzureMessaging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAFEE9C2EF482FD00E87513 /* WindowsAzureMessaging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0ED220402F227E2200BA4E01 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED2203F2F227E2200BA4E01 /* AppCenterAnalytics */; };
+		0ED220422F227E2200BA4E01 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED220412F227E2200BA4E01 /* AppCenterCrashes */; };
+		0ED220442F227E2200BA4E01 /* AppCenterDistribute in Frameworks */ = {isa = PBXBuildFile; productRef = 0ED220432F227E2200BA4E01 /* AppCenterDistribute */; };
 		2800ABF12654427300B2622F /* AuthoredActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800ABF02654427300B2622F /* AuthoredActivityCell.swift */; };
 		2800ABF426545F4C00B2622F /* AuthoredActivitiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800ABF326545F4C00B2622F /* AuthoredActivitiesList.swift */; };
 		2800ABF7265460C800B2622F /* RouteDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2800ABF6265460C800B2622F /* RouteDetailsView.swift */; };
@@ -115,10 +123,7 @@
 		285C8B812304868F00E466DF /* ARHeadsetGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C8B802304868E00E466DF /* ARHeadsetGenerator.swift */; };
 		285C8B83230496D900E466DF /* GlyphCallout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285C8B82230496D900E466DF /* GlyphCallout.swift */; };
 		286145EB2625099F000E5525 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 286145EA2625099F000E5525 /* SDWebImage */; };
-		286145F1262509DA000E5525 /* WindowsAzureMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 286145F0262509DA000E5525 /* WindowsAzureMessaging */; };
 		2866A7C12625013400EBA2D8 /* DZNEmptyDataSet in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */; };
-		2866A7C72625020600EBA2D8 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C62625020600EBA2D8 /* AppCenterAnalytics */; };
-		2866A7C92625020600EBA2D8 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7C82625020600EBA2D8 /* AppCenterCrashes */; };
 		2866A7CF2625028600EBA2D8 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7CE2625028600EBA2D8 /* Reachability */; };
 		2866A7D5262502D500EBA2D8 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */; };
 		286708D125005912002F962B /* street_non_1c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 286708D025005912002F962B /* street_non_1c.wav */; };
@@ -662,7 +667,7 @@
 		62EACA2B26697F4300DBDECC /* WaypointDetailAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */; };
 		62F7A30C27B6080900C62390 /* InteractiveBeaconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */; };
 		62F7A30E27B6082A00C62390 /* InteractiveBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */; };
-		87F82E5F35CA8BCEFAC47C4F /* Pods_Soundscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */; };
+		96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 96CF5F492CBDB14C00E9EDB4 /* CoreGPX */; };
 		B90C27D61EAF81D600007368 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90C27D51EAF81D600007368 /* Sound.swift */; };
 		B918EE9825100FFF00A5354A /* CalloutRangeContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */; };
 		B91D3F6427AB5546004159A8 /* UserAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D3F6327AB5546004159A8 /* UserAction.swift */; };
@@ -877,6 +882,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0EAFEEA42EF4830C00E87513 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0EAFEEA32EF4830C00E87513 /* WindowsAzureMessaging.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9B06E971E6483900010936A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -889,6 +905,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0EAFEE992EF482FD00E87513 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0EAFEE9A2EF482FD00E87513 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0EAFEE9B2EF482FD00E87513 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0EAFEE9C2EF482FD00E87513 /* WindowsAzureMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WindowsAzureMessaging.xcframework; sourceTree = "<group>"; };
 		2800ABF02654427300B2622F /* AuthoredActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthoredActivityCell.swift; sourceTree = "<group>"; };
 		2800ABF326545F4C00B2622F /* AuthoredActivitiesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthoredActivitiesList.swift; path = "GuideDogs/Code/Visual UI/Views/Authored Activities/AuthoredActivitiesList.swift"; sourceTree = SOURCE_ROOT; };
 		2800ABF6265460C800B2622F /* RouteDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailsView.swift; sourceTree = "<group>"; };
@@ -1239,7 +1259,6 @@
 		28FD0C46206AAC37000FC731 /* NewFeaturesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewFeaturesView.xib; path = "Code/Visual UI/Controls/New Feature Announcement/NewFeaturesView.xib"; sourceTree = "<group>"; };
 		2F4432FF1D36B5A300CA437D /* licenses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = licenses.html; sourceTree = "<group>"; };
 		2F4433011D36B5B300CA437D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = "Code/Visual UI/View Controllers/Settings/AboutViewController.swift"; sourceTree = "<group>"; };
-		305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.release.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.release.xcconfig"; sourceTree = "<group>"; };
 		31013A6420D9ACBE00205D1F /* HomeViewController+RemoteControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HomeViewController+RemoteControl.swift"; path = "Code/Visual UI/View Controllers/Home/HomeViewController+RemoteControl.swift"; sourceTree = "<group>"; };
 		310254852278FA2200B1A770 /* WhatsNew.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = WhatsNew.xcassets; path = Assets/Images/WhatsNew.xcassets; sourceTree = "<group>"; };
 		311E92E31DF1E9CF003A5E23 /* BLELogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BLELogger.swift; path = Code/App/Logging/BLELogger.swift; sourceTree = "<group>"; };
@@ -1287,7 +1306,6 @@
 		31F12C4122569E9100BDA072 /* StreetSuffixAbbreviations_fr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StreetSuffixAbbreviations_fr.plist; path = Assets/PropertyLists/StreetSuffixAbbreviations_fr.plist; sourceTree = "<group>"; };
 		31F1370322B867B800FC1860 /* GeolocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeolocationManager.swift; path = "Code/Sensors/Geolocation/Geolocation Manager/GeolocationManager.swift"; sourceTree = "<group>"; };
 		31FE6C77233A7B760098D8C5 /* TelemetryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TelemetryHelper.swift; path = Code/App/Logging/TelemetryHelper.swift; sourceTree = "<group>"; };
-		40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.adhoc.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.adhoc.xcconfig"; sourceTree = "<group>"; };
 		568480881CB73F51004B4227 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		5684808F1CBC975E004B4227 /* Soundscape-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = "Soundscape-Bridging-Header.h"; path = "Code/App/Soundscape-Bridging-Header.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		568480901CBC9C94004B4227 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = HomeViewController.swift; path = "Code/Visual UI/View Controllers/Home/HomeViewController.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -1564,8 +1582,6 @@
 		62EACA2A26697F4300DBDECC /* WaypointDetailAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointDetailAnnotationView.swift; sourceTree = "<group>"; };
 		62F7A30B27B6080900C62390 /* InteractiveBeaconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconView.swift; sourceTree = "<group>"; };
 		62F7A30D27B6082A00C62390 /* InteractiveBeaconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveBeaconViewModel.swift; sourceTree = "<group>"; };
-		8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Soundscape.debug.xcconfig"; path = "Target Support Files/Pods-Soundscape/Pods-Soundscape.debug.xcconfig"; sourceTree = "<group>"; };
-		AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Soundscape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90C27D51EAF81D600007368 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Code/Audio/Protocols/Sound.swift; sourceTree = "<group>"; };
 		B918EE9725100FFF00A5354A /* CalloutRangeContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalloutRangeContext.swift; sourceTree = "<group>"; };
 		B91D3F6327AB5546004159A8 /* UserAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAction.swift; sourceTree = "<group>"; };
@@ -1807,23 +1823,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				283B0307264B03920092F74F /* SDWebImageSwiftUI in Frameworks */,
-				2866A7C72625020600EBA2D8 /* AppCenterAnalytics in Frameworks */,
 				2866A7CF2625028600EBA2D8 /* Reachability in Frameworks */,
-				2866A7C92625020600EBA2D8 /* AppCenterCrashes in Frameworks */,
-				286145F1262509DA000E5525 /* WindowsAzureMessaging in Frameworks */,
+				0EAFEEA22EF4830C00E87513 /* WindowsAzureMessaging.xcframework in Frameworks */,
 				286F409D2624FF6000C3F80B /* NVActivityIndicatorView in Frameworks */,
+				96CF5F4A2CBDB14C00E9EDB4 /* CoreGPX in Frameworks */,
+				0ED220442F227E2200BA4E01 /* AppCenterDistribute in Frameworks */,
 				2866A7D5262502D500EBA2D8 /* CocoaLumberjackSwift in Frameworks */,
 				286145EB2625099F000E5525 /* SDWebImage in Frameworks */,
+				0ED220422F227E2200BA4E01 /* AppCenterCrashes in Frameworks */,
 				281BCBFF262638290031298D /* RealmSwift in Frameworks */,
 				28F1ECE2262505DC00E964C0 /* Realm in Frameworks */,
+				0ED220402F227E2200BA4E01 /* AppCenterAnalytics in Frameworks */,
 				2866A7C12625013400EBA2D8 /* DZNEmptyDataSet in Frameworks */,
-				87F82E5F35CA8BCEFAC47C4F /* Pods_Soundscape.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EAFEE9D2EF482FD00E87513 /* WindowsAzureMessaging-SDK-Apple */ = {
+			isa = PBXGroup;
+			children = (
+				0EAFEE992EF482FD00E87513 /* CHANGELOG.md */,
+				0EAFEE9A2EF482FD00E87513 /* LICENSE */,
+				0EAFEE9B2EF482FD00E87513 /* README.md */,
+				0EAFEE9C2EF482FD00E87513 /* WindowsAzureMessaging.xcframework */,
+			);
+			path = "WindowsAzureMessaging-SDK-Apple";
+			sourceTree = "<group>";
+		};
 		2800ABF226545C1000B2622F /* Authored Activities */ = {
 			isa = PBXGroup;
 			children = (
@@ -2987,6 +3015,7 @@
 			children = (
 				280FF2FC26AF6BDF00DE9C5D /* SwiftUI.framework */,
 				2876EE142433FE5600B0A137 /* CoreServices.framework */,
+				0EAFEE9D2EF482FD00E87513 /* WindowsAzureMessaging-SDK-Apple */,
 				D3E2A6361CAD5CA100A5192A /* Accelerate.framework */,
 				D3A52AD31B4444120084CB65 /* AudioToolbox.framework */,
 				D3A52AD11B4443DC0084CB65 /* AVFoundation.framework */,
@@ -2997,7 +3026,6 @@
 				D334CB751B9F682400546BF1 /* MapKit.framework */,
 				D3CE458E1C1737AE00AC1A25 /* MobileCoreServices.framework */,
 				D384DE871B867AD400884DE5 /* ReplayKit.framework */,
-				AD86F348E62F7541171F6738 /* Pods_Soundscape.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4252,16 +4280,6 @@
 			path = "Interactive View";
 			sourceTree = "<group>";
 		};
-		94B9789D44F5F13621A0C9B1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */,
-				305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */,
-				40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B91D3F6227AB5546004159A8 /* User Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -5090,7 +5108,6 @@
 				B9E5F4CE2891DBAC0019DEED /* Packages */,
 				4AD48659F673FA58D2DF2C07 /* Frameworks */,
 				D3D7CFC91B3D96470020B5E9 /* Products */,
-				94B9789D44F5F13621A0C9B1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -5119,13 +5136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3D7CFEE1B3D96470020B5E9 /* Build configuration list for PBXNativeTarget "Soundscape" */;
 			buildPhases = (
-				E86D862CEECEE5E60D74C907 /* [CP] Check Pods Manifest.lock */,
 				D3D7CFC41B3D96460020B5E9 /* Sources */,
 				D3D7CFC51B3D96460020B5E9 /* Frameworks */,
 				D3D7CFC61B3D96460020B5E9 /* Resources */,
 				B9B06E971E6483900010936A /* CopyFiles */,
 				31500FEE224CA30000BD0A4E /* Localization Validation */,
-				A7C861097F0568D3663BCC29 /* [CP] Embed Pods Frameworks */,
+				0EAFEEA42EF4830C00E87513 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -5135,15 +5151,16 @@
 			packageProductDependencies = (
 				286F409C2624FF6000C3F80B /* NVActivityIndicatorView */,
 				2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */,
-				2866A7C62625020600EBA2D8 /* AppCenterAnalytics */,
-				2866A7C82625020600EBA2D8 /* AppCenterCrashes */,
 				2866A7CE2625028600EBA2D8 /* Reachability */,
 				2866A7D4262502D500EBA2D8 /* CocoaLumberjackSwift */,
 				28F1ECE1262505DC00E964C0 /* Realm */,
 				286145EA2625099F000E5525 /* SDWebImage */,
-				286145F0262509DA000E5525 /* WindowsAzureMessaging */,
 				281BCBFE262638290031298D /* RealmSwift */,
 				283B0306264B03920092F74F /* SDWebImageSwiftUI */,
+				96CF5F492CBDB14C00E9EDB4 /* CoreGPX */,
+				0ED2203F2F227E2200BA4E01 /* AppCenterAnalytics */,
+				0ED220412F227E2200BA4E01 /* AppCenterCrashes */,
+				0ED220432F227E2200BA4E01 /* AppCenterDistribute */,
 			);
 			productName = GuideDogs;
 			productReference = D3D7CFC81B3D96470020B5E9 /* Soundscape.app */;
@@ -5210,13 +5227,13 @@
 			packageReferences = (
 				286F409B2624FF6000C3F80B /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */,
-				2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */,
 				2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */,
 				2866A7D3262502D500EBA2D8 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
 				28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */,
 				283B0305264B03920092F74F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+				0ED2203E2F227E2200BA4E01 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
 			);
 			productRefGroup = D3D7CFC91B3D96470020B5E9 /* Products */;
 			projectDirPath = "";
@@ -5315,6 +5332,9 @@
 				2872D15726D978F9000BE465 /* Classic_OffAxis.wav in Resources */,
 				2809B8122379E9EA00F6C9AC /* calibration_in_progress.wav in Resources */,
 				28467F0A26436AB000FB4C9F /* Route_End.wav in Resources */,
+				0EAFEE9F2EF482FD00E87513 /* CHANGELOG.md in Resources */,
+				0EAFEEA02EF482FD00E87513 /* README.md in Resources */,
+				0EAFEEA12EF482FD00E87513 /* LICENSE in Resources */,
 				281738A222BD32A400EFDD62 /* Devices.storyboard in Resources */,
 				C36BAD5C224EBE2500182747 /* OfflineHelpBanner.xib in Resources */,
 				2896377D26D70123001694C0 /* Drop_A.wav in Resources */,
@@ -5382,48 +5402,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Only run in debug type builds (\"Debug\", \"Debug-FF\", etc)\nif [[ ${CONFIGURATION} == \"Debug\"* ]]; then\n    ${SRCROOT}/Scripts/LocalizationLinter/main.swift\n    echo \"Skipping Localization Validation script (non-debug build)\"\nelse \n    echo \"Skipping Localization Validation script (non-debug build)\"\nfi\n";
-		};
-		A7C861097F0568D3663BCC29 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TBXML/TBXML.framework",
-				"${BUILT_PRODUCTS_DIR}/iOS-GPX-Framework/iOS_GPX_Framework.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TBXML.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOS_GPX_Framework.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Soundscape/Pods-Soundscape-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E86D862CEECEE5E60D74C907 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Soundscape-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -6220,6 +6198,10 @@
 			baseConfigurationReference = 62E2B87B25AE5C0F0008AF5D /* AdHoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					"$(ARCHS_STANDARD)",
+				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -6252,6 +6234,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -6281,7 +6264,6 @@
 		};
 		3163C7431DFDB27D00C9E605 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40326344E74D0801024B33A2 /* Pods-Soundscape.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Soundscape AdHoc";
@@ -6290,7 +6272,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/SoundscapeDF.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = "";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
@@ -6309,8 +6291,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
+					"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/ios-arm64/WindowsAzureMessaging.framework/Headers",
+					"\"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/** \"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6334,7 +6317,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AudioKitV2.1/AudioKit/**";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = AdHoc;
@@ -6344,6 +6327,10 @@
 			baseConfigurationReference = 62E2B87C25AE5C0F0008AF5D /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					"$(ARCHS_STANDARD)",
+				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -6375,6 +6362,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -6412,6 +6400,10 @@
 			baseConfigurationReference = 62E2B87A25AE5C0F0008AF5D /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					x86_64,
+					"$(ARCHS_STANDARD)",
+				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -6443,6 +6435,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -6472,7 +6465,6 @@
 		};
 		D3D7CFEF1B3D96470020B5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F4B74903FC9A3FE2E98C7F5 /* Pods-Soundscape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon Beta";
 				BUNDLE_SPOKEN_NAME = "Soundscape Debug";
@@ -6481,7 +6473,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 48N3J4V5KM;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
@@ -6501,8 +6493,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
+					"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/ios-arm64/WindowsAzureMessaging.framework/Headers",
+					"\"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/** \"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6527,14 +6520,13 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AudioKitV2.1/AudioKit/**";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		D3D7CFF01B3D96470020B5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 305AFCD5960AA8807CCEF268 /* Pods-Soundscape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_SPOKEN_NAME = Soundscape;
@@ -6543,7 +6535,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuideDogs/Assets/PropertyLists/Soundscape.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 48N3J4V5KM;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = NO;
@@ -6561,8 +6553,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/HockeySDK\"",
+					"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/ios-arm64/WindowsAzureMessaging.framework/Headers",
+					"\"$(PROJECT_DIR)/Frameworks/WindowsAzureMessaging.xcframework/** \"",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = GuideDogs/Assets/PropertyLists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -6586,7 +6579,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AudioKitV2.1/AudioKit/**";
-				VALID_ARCHS = "$(ARCHS_STANDARD)";
+				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -6617,6 +6610,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0ED2203E2F227E2200BA4E01 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
 		283B0305264B03920092F74F /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
@@ -6633,28 +6634,12 @@
 				minimumVersion = 5.13.2;
 			};
 		};
-		286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Azure/azure-notificationhubs-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.5;
-			};
-		};
 		2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dzenbot/DZNEmptyDataSet";
 			requirement = {
 				kind = revision;
 				revision = 9bffa69a83a9fa58a14b3cf43cb6dd8a63774179;
-			};
-		};
-		2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Microsoft/AppCenter-SDK-Apple";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.3;
 			};
 		};
 		2866A7CD2625028600EBA2D8 /* XCRemoteSwiftPackageReference "Reachability" */ = {
@@ -6689,9 +6674,32 @@
 				version = 10.11.0;
 			};
 		};
+		96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0ED2203F2F227E2200BA4E01 /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ED2203E2F227E2200BA4E01 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
+		};
+		0ED220412F227E2200BA4E01 /* AppCenterCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ED2203E2F227E2200BA4E01 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterCrashes;
+		};
+		0ED220432F227E2200BA4E01 /* AppCenterDistribute */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ED2203E2F227E2200BA4E01 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterDistribute;
+		};
 		281BCBFE262638290031298D /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
@@ -6707,25 +6715,10 @@
 			package = 286145E92625099F000E5525 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		286145F0262509DA000E5525 /* WindowsAzureMessaging */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 286145EF262509DA000E5525 /* XCRemoteSwiftPackageReference "azure-notificationhubs-ios" */;
-			productName = WindowsAzureMessaging;
-		};
 		2866A7C02625013400EBA2D8 /* DZNEmptyDataSet */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2866A7BF2625013400EBA2D8 /* XCRemoteSwiftPackageReference "DZNEmptyDataSet" */;
 			productName = DZNEmptyDataSet;
-		};
-		2866A7C62625020600EBA2D8 /* AppCenterAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */;
-			productName = AppCenterAnalytics;
-		};
-		2866A7C82625020600EBA2D8 /* AppCenterCrashes */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2866A7C52625020600EBA2D8 /* XCRemoteSwiftPackageReference "AppCenter-SDK-Apple" */;
-			productName = AppCenterCrashes;
 		};
 		2866A7CE2625028600EBA2D8 /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -6746,6 +6739,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28F1ECE0262505DC00E964C0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
+		};
+		96CF5F492CBDB14C00E9EDB4 /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CF5F482CBDB14C00E9EDB4 /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

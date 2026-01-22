@@ -101,8 +101,13 @@ class UIDeviceManager: NSObject {
     // Static Properties
     
     static var isSimulator: Bool {
-        return TARGET_OS_SIMULATOR != 0
+                #if targetEnvironment(simulator)
+                    return true
+                #else
+                    return false
+                #endif
     }
+
     
     private static var batteryState: UIDevice.BatteryState {
         return UIDevice.current.batteryState
